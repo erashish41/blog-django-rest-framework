@@ -17,6 +17,7 @@ class BlogDetailView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = BlogSerializer
     lookup_field = "pk"
     
+    
 class CommentListView(generics.ListCreateAPIView):
     queryset = Comment.objects.all()
     serializer_class = CommentSerializer
